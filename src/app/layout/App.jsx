@@ -9,6 +9,7 @@ import UserDetailedPage from '../../features/user/UserDetailed/UserDetailedPage'
 import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage';
 import HomePage from '../../features/home/HomePage';
+import ModalManager from '../../features/modal/ModalManager';
 import TestComponent from '../../features/testarea/TestComponent';
 
 class App extends Component {
@@ -23,6 +24,7 @@ class App extends Component {
           path="/(.+)"
           render={() => (
             <div>
+              <ModalManager/>
               <NavBar />
               <Container className="main">
                 <Switch>

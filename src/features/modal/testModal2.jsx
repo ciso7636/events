@@ -4,7 +4,7 @@ import { Modal}  from 'semantic-ui-react';
 const TestModal = () => (
 
     <Modal closeIcon="close" open={true}>
-      <Modal.Header>Test Modal</Modal.Header>
+      <Modal.Header>Test Modal 2</Modal.Header>
       <Modal.Content>
         <Modal.Description>
           <p>Test Modal... nothing to see here</p>
