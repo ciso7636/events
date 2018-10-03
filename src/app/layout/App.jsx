@@ -9,13 +9,14 @@ import UserDetailedPage from '../../features/user/UserDetailed/UserDetailedPage'
 import PeopleDashboard from '../../features/user/PeopleDashboard/PeopleDashboard';
 import EventDetailedPage from '../../features/event/EventDetailed/EventDetailedPage';
 import HomePage from '../../features/home/HomePage';
-import ModalManager from '../../features/modal/ModalManager';
 import TestComponent from '../../features/testarea/TestComponent';
+import ModalManager from '../../features/modals/ModalManager';
 
 class App extends Component {
   render() {
     return (
       <div>
+        <ModalManager/>
         <Switch>
           <Route exact path="/" component={HomePage} />
         </Switch>
@@ -24,7 +25,6 @@ class App extends Component {
           path="/(.+)"
           render={() => (
             <div>
-              <ModalManager/>
               <NavBar />
               <Container className="main">
                 <Switch>
